@@ -194,6 +194,7 @@
     <Compile Include="Models\dbStaffSystem.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Products.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Models\StaffType.cs" />
