@@ -41,7 +41,7 @@
                             //int cnt = 0;
                             int grp = 1;
                             int subcntlvl2 = 0;
-                            List<StaffSystem.ViewModels.AssignedComplianceData> courses = ViewBag.Compliance;
+                            List<StaffSystem.ViewModels.AssignedComplianceProductData> courses = ViewBag.Compliance;
                              
                             foreach (var course in courses)
                             {
@@ -98,8 +98,29 @@
         </div>
     </div>
 }
+<script type="text/javascript">
 
-<div>
+
+
+
+
+
+    cbChanged = function (checkboxElem, grpid) {
+        var div = document.getElementById("#div_" + grpid);
+        if (checkboxElem.checked) {
+            //alert("That box was checked.");
+           $("#div_" + grpid).show();
+          //  div.style.visibility = "visible";
+
+        } else {
+            //alert("That box was unchecked.");
+            $("#div_" + grpid).toggle();
+        }
+    }
+
+
+
+</script><div>
     @Html.ActionLink("Back to List", "Index")
 </div>
 

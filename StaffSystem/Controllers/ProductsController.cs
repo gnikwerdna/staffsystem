@@ -69,12 +69,18 @@ namespace StaffSystem.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Products products = db.Products.Find(id);
+            PopulateAssignedComplianceType(products);
             if (products == null)
             {
                 return HttpNotFound();
             }
             return View(products);
         }
+
+
+
+       
+       
 //**************************edit update starts here***********************************************************************************************
         // POST: Products/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
