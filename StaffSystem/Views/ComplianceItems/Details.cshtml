@@ -1,0 +1,74 @@
+﻿@model StaffSystem.Models.ComplianceItems
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ComplianceItems</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SubID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SubID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.level)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.level)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.grp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.grp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.order)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ComplianceID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
