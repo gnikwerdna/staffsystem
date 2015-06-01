@@ -14,7 +14,6 @@ namespace StaffSystem.Models
         public DbSet<ComplianceItems> ComplianceItems { get; set; }
         public DbSet<ComplianceTypes> ComplianceTypes { get; set; }
         public DbSet<StaffType> StaffType { get; set; }
-        public DbSet<Products> Products { get; set; }
         
         // Your context has been configured to use a 'dbStaffSystem' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
